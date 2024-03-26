@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-weight: 500;
+}
+
+.price_card {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.1s ease;
+
+  span.check {
+    width: 20px;
+    height: 20px;
+    background: url(../images/check-circle.png);
+    margin-right: 10px;
+    // display: block;
+    float: left;
+  }
+  #corner_hot {
+    visibility: hidden !important;
+  }
+  #hobar_hot {
+    visibility: visible !important;
+    top: 0%;
+    left: 50%;
+    font-size: 14px;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease;
+  }
+
+  &:hover {
+    background-image: url(../images/Group\ 30.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #3f87f5;
+    background-size: contain;
+    background-color: #3f87f5;
+    transition: 0.5s ease;
+    color: #fff !important;
+    width: 100%;
+    height: max-content;
+    top: -30px;
+    box-shadow: 0px 41px 20px -1px #3f87f520;
+    li {
+      color: #fff !important;
+      transition: 0.1s ease;
+    }
+    p {
+      color: #fff !important;
+      transition: 0.1s ease;
+    }
+    span.check {
+      background: url(../images/check-circle-1.png);
+      transition: 0.1s ease;
+    }
+    a {
+      background: #fff !important;
+      transition: 0.1s ease;
+    }
+    #corner_hot {
+      visibility: visible !important;
+      transition: 0.1s ease;
+    }
+    #hobar_hot {
+      visibility: hidden !important;
+    }
+  }
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  border: none;
+  border-bottom: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.accordion-item {
+  border: 0.1px solid rgb(170, 213, 255) !important;
+}
+.border-start {
+  border-left: 4px solid dodgerblue !important;
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  .show_text_button {
+    display: none !important;
+  }
+  .show_case_reverse {
+    flex-direction: column-reverse;
+  }
+  .price_card {
+    margin-bottom: 40px;
+  }
+  .hoverm > .price_card {
+    background-image: url(../images/Group\ 30.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #3f87f5;
+    background-size: contain;
+    background-color: #3f87f5;
+    transition: 0.5s ease;
+    color: #fff !important;
+    width: 100%;
+    height: max-content;
+    top: 0;
+    box-shadow: 0px 41px 20px -1px #3f87f520;
+    li {
+      color: #fff !important;
+      transition: 0.1s ease;
+    }
+    p {
+      color: #fff !important;
+      transition: 0.1s ease;
+    }
+    span.check {
+      background: url(../images/check-circle-1.png);
+      transition: 0.1s ease;
+    }
+    a {
+      background: #fff !important;
+      transition: 0.1s ease;
+    }
+  }
+  .tour-item {
+    margin-bottom: 30px !important;
+  }
+  .appstor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyright {
+    text-align: center;
+    margin: 25px 0 0 0;
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .show_text_button {
+    display: none !important;
+  }
+  .price_card {
+    margin-bottom: 40px;
+  }
+  .hoverm > .price_card {
+    background-image: url(../images/Group\ 30.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #3f87f5;
+    background-size: contain;
+    background-color: #3f87f5;
+    transition: 0.5s ease;
+    color: #fff !important;
+    width: 100%;
+    height: max-content;
+    top: 0px;
+    box-shadow: 0px 41px 20px -1px #3f87f520;
+    li {
+      color: #fff !important;
+      transition: 0.1s ease;
+    }
+    p {
+      color: #fff !important;
+      transition: 0.1s ease;
+    }
+    span.check {
+      background: url(../images/check-circle-1.png);
+      transition: 0.1s ease;
+    }
+    a {
+      background: #fff !important;
+      transition: 0.1s ease;
+    }
+  }
+  .price_card #corner_hot {
+    visibility: visible !important;
+  }
+  .price_card #hobar_hot {
+    visibility: hidden !important;
+  }
+  .copyright {
+    text-align: center;
+    margin: 25px 0 0 0;
+  }
+  .appstor {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    p {
+      margin-top: 20px;
+    }
+    // img {
+    //   width: 200px;
+    //   position: relative;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    // }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .show_text_button {
+    display: none !important;
+  }
+  .show_text_buttonm {
+    padding: 18px 40px !important;
+    line-height: 40px;
+    font-size: 25px !important;
+  }
+  .hoverm > .price_card {
+    background-image: url(../images/Group\ 30.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #3f87f5;
+    background-size: contain;
+    background-color: #3f87f5;
+    transition: 0.5s ease;
+    color: #fff !important;
+    width: 100%;
+    height: max-content;
+    top: 0px;
+    box-shadow: 0px 41px 20px -1px #3f87f520;
+  }
+  .copyright {
+    text-align: left;
+    margin: 25px 0 0 0;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .show_text_button {
+    display: inline !important;
+    padding: 18px 40px !important;
+    line-height: 40px;
+  }
+  .show_text_buttonm {
+    display: none !important;
+  }
+  .hoverm > .price_card {
+    background-image: url(../images/Group\ 30.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: contain;
+    transition: 0.5s ease;
+    color: #000 !important;
+    width: 100%;
+    height: max-content;
+    top: 0px;
+    box-shadow: none;
+    li {
+      color: #000 !important;
+      transition: 0.1s ease;
+    }
+    p {
+      color: #000 !important;
+      transition: 0.1s ease;
+    }
+    span.check {
+      background: url(../images/check-circle.png);
+      transition: 0.1s ease;
+    }
+    a {
+      background: #f496d120 !important;
+      transition: 0.1s ease;
+    }
+    &:hover {
+      background-image: url(../images/Group\ 30.png);
+      background-position: right;
+      background-repeat: no-repeat;
+      background-color: #3f87f5;
+      background-size: contain;
+      background-color: #3f87f5;
+      transition: 0.5s ease;
+      color: #fff !important;
+      width: 100%;
+      height: max-content;
+      top: -30px;
+      box-shadow: 0px 41px 20px -1px #3f87f520;
+      li {
+        color: #fff !important;
+        transition: 0.1s ease;
+      }
+      p {
+        color: #fff !important;
+        transition: 0.1s ease;
+      }
+      span.check {
+        background: url(../images/check-circle-1.png);
+        transition: 0.1s ease;
+      }
+      a {
+        background: #fff !important;
+        transition: 0.1s ease;
+      }
+    }
+  }
+  .price_card #corner_hot {
+    visibility: hidden !important;
+  }
+  .price_card #hobar_hot {
+    visibility: visible !important;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .show_text_buttonm {
+    display: none !important;
+  }
+  .hoverm > .price_card {
+    background-image: url(../images/Group\ 30.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #3f87f5;
+    background-size: contain;
+    transition: 0.5s ease;
+    color: #fff !important;
+    width: 100%;
+    height: max-content;
+    top: 0px;
+    box-shadow: none;
+    li {
+      color: #fff !important;
+      transition: 0.1s ease;
+    }
+    p {
+      color: #fff !important;
+      transition: 0.1s ease;
+    }
+    span.check {
+      background: url(../images/check-circle-1.png);
+      transition: 0.1s ease;
+    }
+    a {
+      background: #fff !important;
+      transition: 0.1s ease;
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .show_text_buttonm {
+    display: none !important;
+  }
+  .price_card:nth-child(3) {
+    background-image: url(../images/Group\ 30.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: #fff !important;
+    background-size: contain;
+    transition: 0.5s ease;
+    color: #fff !important;
+    width: 100%;
+    height: max-content;
+    top: -30px;
+    box-shadow: 0px 41px 20px -1px #3f87f520;
+  }
+}
